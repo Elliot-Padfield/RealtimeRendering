@@ -1,0 +1,10 @@
+{
+	"name": "com.unity.realtimerendering",
+	"version": "0.0.1",
+	"unity": "2020.3",
+	"description": "Realtime Rendering is a package that aims to lower the boundries of technical art",
+	"keywords": ["shader", "words", "used", "for", "package", "search"],
+	"category": "Technical Art",
+	"dependencies": {
+	}
+}
