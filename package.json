@@ -1,10 +1,17 @@
 {
-	"name": "com.unity.realtimerendering",
+	"name": "com.unity.realtime-rendering",
+	"displayName": "Realtime Rendering",
 	"version": "0.0.1",
 	"unity": "2020.3",
+	"unityRelease": "6f1",
 	"description": "Realtime Rendering is a package that aims to lower the boundries of technical art",
 	"keywords": ["shader", "words", "used", "for", "package", "search"],
 	"category": "Technical Art",
 	"dependencies": {
+	},
+	"repository": {
+	"url": "https://github.com/Elliot-Padfield/RealtimeRendering.git",
+	"type": "git",
+	"revision": "abb44f053e9a41d2e00e149e32a19bcec76e98b4"
 	}
 }
