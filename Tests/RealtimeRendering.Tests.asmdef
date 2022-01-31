@@ -1,3 +1,16 @@
 {
-	"name": "RealtimeRendering.Tests"
+    "name": "RealtimeRendering.Tests",
+    "rootNamespace": "",
+    "references": [
+        "GUID:755a8b19a997e5c4c928cacb2258e2f1"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
