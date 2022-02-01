@@ -4,8 +4,11 @@ using UnityEngine;
 
 namespace RealtimeRendering.Examples
 {
+
     public class SavingTest : MonoBehaviour
     {
+        public Data byteData;
+
         void Start()
         {
             var data = new Data()
@@ -14,11 +17,13 @@ namespace RealtimeRendering.Examples
                 value = 1
             };
 
-            Save.SaveToJson(data, "Bob", Save.SavePath.StreamingAssets, true);
-            Save.SaveToJson(data, "Bob", Save.SavePath.AssetsFolder, true);
+            SaveLoad.SaveToJson(data, "Bob", SaveLoad.SavePath.StreamingAssets, true);
+            SaveLoad.SaveToJson(data, "Bob", SaveLoad.SavePath.AssetsFolder, true);
 
-            Save.SaveToBytes(data, "Byte Bob", Save.SavePath.StreamingAssets, true);
-            Save.SaveToBytes(data, "Byte Bob", Save.SavePath.AssetsFolder, true);
+            SaveLoad.SaveToBytes(data, "Byte Bob", SaveLoad.SavePath.StreamingAssets, true);
+            var bytes = SaveLoad.SaveToBytes(data, "Byte Bob", SaveLoad.SavePath.AssetsFolder, true);
+
+            byteData = SaveLoad.LoadByteArray(bytes) as Data;
         }
     }
 
